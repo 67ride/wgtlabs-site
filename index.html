@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="WGTLabs builds mobile apps, digital products and custom business systems." />
+  <title>WGTLabs — Digital products & mobile apps</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="orb orb-one"></div>
+  <div class="orb orb-two"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="WGTLabs home">
+      <span class="brand-mark">WGT</span>
+      <span class="brand-name">WGTLabs</span>
+    </a>
+
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#who" data-i18n="navWho">Who we are</a>
+      <a href="#project" data-i18n="navProject">Live project</a>
+      <a href="#services" data-i18n="navServices">What we can do</a>
+    </nav>
+
+    <div class="lang-switch" aria-label="Language switch">
+      <button class="lang-button is-active" data-set-lang="en">EN</button>
+      <button class="lang-button" data-set-lang="cs">CZ</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="eyebrow">Mobile apps • Web platforms • Business systems</p>
+          <h1 data-i18n="heroTitle">We build digital products with a pulse.</h1>
+          <p class="hero-text" data-i18n="heroText">WGTLabs is a Czech digital product studio focused on mobile applications, modern web interfaces and custom systems for companies that need clean, scalable technology.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#project" data-i18n="heroPrimary">See live project</a>
+            <a class="button ghost" href="#services" data-i18n="heroSecondary">Explore capabilities</a>
+          </div>
+        </div>
+
+        <div class="signal-card" aria-label="WGTLabs visual signal">
+          <div class="scanline"></div>
+          <div class="core-ring"></div>
+          <div class="core-dot"></div>
+          <div class="signal-row"><span></span><span></span><span></span><span></span></div>
+          <p class="card-kicker">WGTLabs / signal online</p>
+          <h2>Design. Code. Launch.</h2>
+          <p data-i18n="signalText">From first concept to real users.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="who" class="section panel-section">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="whoEyebrow">Who we are</p>
+        <h2 data-i18n="whoTitle">A small lab for serious digital products.</h2>
+      </div>
+      <div class="text-panel">
+        <p data-i18n="whoText">We connect product thinking, modern UI and practical development. Our goal is simple: build things that look premium, work reliably and can grow from prototype to real business.</p>
+      </div>
+    </section>
+
+    <section id="project" class="section project-section">
+      <div class="project-card">
+        <div class="project-badge">LIVE PROJECT</div>
+        <div>
+          <p class="eyebrow">67ride</p>
+          <h2 data-i18n="projectTitle">A social app for car culture.</h2>
+          <p data-i18n="projectText">67ride is our current live project: a mobile-first platform for automotive profiles, clubs, events, ride parties, showcases and community interaction.</p>
+        </div>
+        <div class="project-stats">
+          <div><strong>Flutter</strong><span data-i18n="statOne">mobile app</span></div>
+          <div><strong>Supabase</strong><span data-i18n="statTwo">backend</span></div>
+          <div><strong>67ride</strong><span data-i18n="statThree">live build</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section services-section">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="servicesEyebrow">What we can do</p>
+        <h2 data-i18n="servicesTitle">From app ideas to company systems.</h2>
+      </div>
+      <div class="cards">
+        <article class="service-card">
+          <span>01</span>
+          <h3 data-i18n="serviceOneTitle">Mobile applications</h3>
+          <p data-i18n="serviceOneText">Flutter apps, prototypes, user profiles, feeds, maps, notifications and app-store ready product flows.</p>
+        </article>
+        <article class="service-card">
+          <span>02</span>
+          <h3 data-i18n="serviceTwoTitle">Business systems</h3>
+          <p data-i18n="serviceTwoText">Internal tools, ticketing systems, dashboards, admin panels and workflows for teams.</p>
+        </article>
+        <article class="service-card">
+          <span>03</span>
+          <h3 data-i18n="serviceThreeTitle">Landing pages</h3>
+          <p data-i18n="serviceThreeText">Fast, modern websites for products, launches, campaigns and company presentation.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> WGTLabs</span>
+    <span data-i18n="footerText">Building from Czechia. Launching worldwide.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
