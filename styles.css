@@ -1149,3 +1149,150 @@ body.is-loaded .cursor-glow { opacity: 1; }
   .reveal { opacity: 1; transform: none; }
   .cursor-glow { display: none; }
 }
+
+/* v15 header polish: wider logo, stable menu alignment, no header jump */
+.site-header {
+  min-height: 112px;
+  align-items: stretch;
+  gap: 34px;
+  animation: none !important;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.brand-banner {
+  align-self: stretch;
+  min-width: clamp(360px, 36vw, 500px);
+  height: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 12px 0;
+  overflow: visible;
+}
+
+.brand-banner img {
+  width: clamp(360px, 34vw, 500px);
+  max-height: 88px;
+  height: auto;
+  object-fit: contain;
+  object-position: left center;
+  transform: none !important;
+}
+
+.brand-banner:hover img {
+  transform: none !important;
+}
+
+.main-nav {
+  flex: 1 1 auto;
+  align-self: stretch;
+  height: auto;
+  min-height: 112px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.main-nav a {
+  position: relative;
+  min-height: 48px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 18px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.main-nav a::after {
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: 7px;
+  width: auto;
+  height: 2px;
+  margin: 0;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 220ms ease;
+}
+
+.main-nav a:hover::after {
+  width: auto;
+  transform: scaleX(1);
+}
+
+.lang-switch {
+  align-self: center;
+  flex: 0 0 auto;
+  height: 44px;
+}
+
+.lang-btn {
+  min-width: 44px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 14px;
+  line-height: 1;
+}
+
+@media (max-width: 1080px) {
+  .site-header {
+    min-height: auto;
+    flex-wrap: wrap;
+    padding: 12px 20px 14px;
+    gap: 12px 18px;
+    align-items: center;
+  }
+
+  .brand-banner {
+    height: auto;
+    min-width: min(100%, 420px);
+    padding: 0;
+  }
+
+  .brand-banner img {
+    width: min(100%, 420px);
+    max-height: 82px;
+  }
+
+  .main-nav {
+    order: 3;
+    width: 100%;
+    min-height: 48px;
+    justify-content: flex-start;
+    overflow-x: auto;
+    gap: 6px;
+  }
+}
+
+@media (max-width: 740px) {
+  .site-header {
+    padding: 12px 14px;
+  }
+
+  .brand-banner {
+    width: calc(100% - 112px);
+    min-width: 0;
+  }
+
+  .brand-banner img {
+    width: min(100%, 320px);
+    max-height: 64px;
+  }
+
+  .lang-switch {
+    margin-left: auto;
+  }
+
+  .main-nav a {
+    height: 44px;
+    min-height: 44px;
+    padding: 0 14px;
+    font-size: 13px;
+  }
+}

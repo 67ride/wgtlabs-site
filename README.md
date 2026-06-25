@@ -1,5 +1,5 @@
-# WGTLabs site v14
+# WGTLabs site v15
 
 Static GitHub Pages landing page for WGTLabs s.r.o.
 
-Version v14 adds a WGT browser favicon / tab icon.
+Version v15 polishes the top header: wider WGTLabs banner, stable menu alignment, and cleaner language switch layout.
