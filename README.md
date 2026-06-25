@@ -1,10 +1,5 @@
-# WGTLabs site
+# WGTLabs site v13
 
-Static landing page for WGTLabs.
+Static GitHub Pages landing page for WGTLabs s.r.o.
 
-Files:
-- `index.html`
-- `styles.css`
-- `script.js`
-
-Designed for GitHub Pages.
+Version v13 adds subtle premium motion: reveal-on-scroll, animated borders, scan passes, pointer glow and hover transitions.

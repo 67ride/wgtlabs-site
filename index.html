@@ -1,117 +1,177 @@
 <!DOCTYPE html>
-<html lang="en" data-lang="en">
+<html lang="cs" data-lang="cs">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="WGTLabs builds mobile apps, digital products and custom business systems." />
-  <title>WGTLabs — Digital products & mobile apps</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <meta name="description" content="WGTLabs s.r.o. — vývoj mobilních aplikací, digitálních systémů a řešení na míru." />
+  <meta property="og:title" content="WGTLabs — Mobile Apps & Digital Systems" />
+  <meta property="og:description" content="Měníme nápady a procesy ve funkční digitální produkty." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://wgtlabs.com" />
+  <title>WGTLabs — Mobile Apps & Digital Systems</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="noise"></div>
-  <div class="orb orb-one"></div>
-  <div class="orb orb-two"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow glow-a" aria-hidden="true"></div>
+  <div class="bg-glow glow-b" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
 
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="WGTLabs home">
-      <span class="brand-mark">WGT</span>
-      <span class="brand-name">WGTLabs</span>
+  <header class="site-header site-header-light">
+    <a class="brand brand-banner" href="#top" aria-label="WGTLabs home">
+      <img src="assets/wgt-banner-white.png" alt="WGTLabs — Mobile Apps Digital Systems" />
     </a>
 
-    <nav class="nav" aria-label="Main navigation">
-      <a href="#who" data-i18n="navWho">Who we are</a>
-      <a href="#project" data-i18n="navProject">Live project</a>
-      <a href="#services" data-i18n="navServices">What we can do</a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#who" data-i18n="navWho">Kdo jsme</a>
+      <a href="#project" data-i18n="navProject">Aktivní projekt</a>
+      <a href="#skills" data-i18n="navSkills">Co umíme</a>
     </nav>
 
     <div class="lang-switch" aria-label="Language switch">
-      <button class="lang-button is-active" data-set-lang="en">EN</button>
-      <button class="lang-button" data-set-lang="cs">CZ</button>
+      <button class="lang-btn is-active" type="button" data-lang-switch="cs">CZ</button>
+      <button class="lang-btn" type="button" data-lang-switch="en">EN</button>
     </div>
   </header>
 
   <main id="top">
-    <section class="hero section">
-      <div class="hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow" data-i18n="eyebrow">Mobile apps • Web platforms • Business systems</p>
-          <h1 data-i18n="heroTitle">We build digital products with a pulse.</h1>
-          <p class="hero-text" data-i18n="heroText">WGTLabs is a Czech digital product studio focused on mobile applications, modern web interfaces and custom systems for companies that need clean, scalable technology.</p>
-          <div class="hero-actions">
-            <a class="button primary" href="#project" data-i18n="heroPrimary">See live project</a>
-            <a class="button ghost" href="#services" data-i18n="heroSecondary">Explore capabilities</a>
+    <section class="hero shell">
+      <div class="hero-main">
+        <h1 data-i18n="heroTitle">Měníme nápady a procesy ve funkční digitální produkty.</h1>
+        <p class="lead" data-i18n="heroText">Stavíme aplikace a systémy, které pomáhají firmám pracovat rychleji, přehledněji a chytřeji. Od prvotního nápadu až po řešení připravené pro reálný provoz.</p>
+
+        <div class="hero-points" aria-label="WGTLabs value points">
+          <div>
+            <strong data-i18n="pointOneTitle">Nejdřív pochopíme problém</strong>
+            <p data-i18n="pointOneText">Každý dobrý systém začíná správnou otázkou. Proto nejdříve poznáme vaši situaci, cíle a překážky.</p>
+          </div>
+          <div>
+            <strong data-i18n="pointTwoTitle">Navrhneme chytrou cestu</strong>
+            <p data-i18n="pointTwoText">Hledáme řešení, které dává smysl technicky, obchodně i prakticky.</p>
+          </div>
+          <div>
+            <strong data-i18n="pointThreeTitle">Postavíme použitelný produkt</strong>
+            <p data-i18n="pointThreeText">Výsledkem má být systém, který lidé skutečně používají — ne software, který jen dobře vypadá na prezentaci.</p>
           </div>
         </div>
 
-        <div class="signal-card" aria-label="WGTLabs visual signal">
-          <div class="scanline"></div>
-          <div class="core-ring"></div>
-          <div class="core-dot"></div>
-          <div class="signal-row"><span></span><span></span><span></span><span></span></div>
-          <p class="card-kicker">WGTLabs / signal online</p>
-          <h2>Design. Code. Launch.</h2>
-          <p data-i18n="signalText">From first concept to real users.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#who" data-i18n="heroPrimary">Kdo jsme</a>
+          <a class="btn secondary" href="#project" data-i18n="heroSecondary">Aktivní projekt</a>
+        </div>
+      </div>
+
+      <aside class="signal-panel" aria-label="WGTLabs process">
+        <div class="panel-mark" aria-hidden="true">
+          <img src="assets/wgt-symbol.png" alt="" />
+        </div>
+        <p class="panel-label" data-i18n="signalLabel">Od problému k systému</p>
+        <div class="signal-flow">
+          <div><span>01</span><strong data-i18n="signalOne">Pochopení situace</strong></div>
+          <div><span>02</span><strong data-i18n="signalTwo">Chytrý návrh</strong></div>
+          <div><span>03</span><strong data-i18n="signalThree">Funkční vývoj</strong></div>
+          <div><span>04</span><strong data-i18n="signalFour">Reálný provoz</strong></div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="who" class="shell section split who-section">
+      <div class="section-title who-rail">
+        <p class="eyebrow" data-i18n="whoLabel">Kdo jsme</p>
+        <span class="section-number">01</span>
+      </div>
+      <div class="text-block who-copy">
+        <p class="who-lead" data-i18n="whoTextOne">Stavíme digitální produkty pro firmy, které chtějí zjednodušit práci, zrychlit procesy a získat lepší přehled.</p>
+        <p data-i18n="whoTextTwo">WGTLabs s.r.o. propojuje vývoj mobilních aplikací, interních systémů a zakázkového softwaru s praktickým pohledem na reálný provoz firmy.</p>
+        <p data-i18n="whoTextThree">Každý projekt bereme jako konkrétní problém, ne jako hotovou šablonu. Hledáme, co zákazník skutečně potřebuje, jak jeho tým pracuje a jak může správně navržený systém ušetřit čas, energii i náklady.</p>
+        <p data-i18n="whoTextFour">Naším cílem je vytvářet řešení, která dávají smysl od prvního návrhu až po každodenní používání.</p>
+      </div>
+    </section>
+
+    <section id="project" class="shell section project-section">
+      <div class="section-title project-heading">
+        <p class="eyebrow" data-i18n="projectLabel">Aktivní projekt</p>
+        <h2 data-i18n="projectTitle">67ride — první signál je online.</h2>
+        <p class="section-subtitle" data-i18n="projectSubtitle">Interní produkt WGTLabs ve vývoji.</p>
+      </div>
+
+      <div class="project-layout">
+        <div class="project-logo-box">
+          <img src="assets/67ride-logo.png" alt="67ride logo" />
+        </div>
+
+        <div class="project-info">
+          <div class="project-intro">
+            <p data-i18n="projectText">67ride používáme jako vlastní produkční test: od návrhu rozhraní přes backend až po reálné testy na telefonech.</p>
+          </div>
+
+          <div class="status-grid">
+            <div class="status-card done">
+              <h3 data-i18n="doneTitle">Stav vývoje</h3>
+              <ul>
+                <li data-i18n="doneOne">Frontend: Flutter / mobilní rozhraní</li>
+                <li data-i18n="doneTwo">Backend: Supabase / databázový základ</li>
+                <li data-i18n="doneThree">Android: APK testy proběhly na reálných telefonech</li>
+                <li data-i18n="doneFour">Testování: první interní kolečka dokončená</li>
+              </ul>
+            </div>
+
+            <div class="status-card next">
+              <h3 data-i18n="nextTitle">Před launchem</h3>
+              <ul>
+                <li data-i18n="nextOne">iOS/TestFlight a Apple Developer nastavení</li>
+                <li data-i18n="nextTwo">širší testování s reálnými uživateli</li>
+                <li data-i18n="nextThree">finální stabilizace a bezpečnostní kontrola</li>
+                <li data-i18n="nextFour">příprava veřejného uvedení projektu</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="who" class="section panel-section">
-      <div class="section-heading">
-        <p class="eyebrow" data-i18n="whoEyebrow">Who we are</p>
-        <h2 data-i18n="whoTitle">A small lab for serious digital products.</h2>
+    <section id="skills" class="shell section skills-section">
+      <div class="section-title centered">
+        <p class="eyebrow" data-i18n="skillsLabel">Co umíme</p>
+        <h2 data-i18n="skillsTitle">Technologie, která má zákazníkovi reálně pomoct.</h2>
       </div>
-      <div class="text-panel">
-        <p data-i18n="whoText">We connect product thinking, modern UI and practical development. Our goal is simple: build things that look premium, work reliably and can grow from prototype to real business.</p>
-      </div>
-    </section>
 
-    <section id="project" class="section project-section">
-      <div class="project-card">
-        <div class="project-badge">LIVE PROJECT</div>
-        <div>
-          <p class="eyebrow">67ride</p>
-          <h2 data-i18n="projectTitle">A social app for car culture.</h2>
-          <p data-i18n="projectText">67ride is our current live project: a mobile-first platform for automotive profiles, clubs, events, ride parties, showcases and community interaction.</p>
-        </div>
-        <div class="project-stats">
-          <div><strong>Flutter</strong><span data-i18n="statOne">mobile app</span></div>
-          <div><strong>Supabase</strong><span data-i18n="statTwo">backend</span></div>
-          <div><strong>67ride</strong><span data-i18n="statThree">live build</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="services" class="section services-section">
-      <div class="section-heading">
-        <p class="eyebrow" data-i18n="servicesEyebrow">What we can do</p>
-        <h2 data-i18n="servicesTitle">From app ideas to company systems.</h2>
-      </div>
-      <div class="cards">
-        <article class="service-card">
+      <div class="skills-grid">
+        <article class="skill-card">
           <span>01</span>
-          <h3 data-i18n="serviceOneTitle">Mobile applications</h3>
-          <p data-i18n="serviceOneText">Flutter apps, prototypes, user profiles, feeds, maps, notifications and app-store ready product flows.</p>
+          <h3 data-i18n="skillOneTitle">Analýza procesu</h3>
+          <p data-i18n="skillOneText">Zmapujeme potřeby, slabá místa, cíle a možnosti. Nejdřív hledáme, co má smysl zlepšit.</p>
         </article>
-        <article class="service-card">
+        <article class="skill-card">
           <span>02</span>
-          <h3 data-i18n="serviceTwoTitle">Business systems</h3>
-          <p data-i18n="serviceTwoText">Internal tools, ticketing systems, dashboards, admin panels and workflows for teams.</p>
+          <h3 data-i18n="skillTwoTitle">Mobilní aplikace</h3>
+          <p data-i18n="skillTwoText">Navrhujeme a stavíme iOS/Android aplikace, prototypy, uživatelské toky a administrační části.</p>
         </article>
-        <article class="service-card">
+        <article class="skill-card">
           <span>03</span>
-          <h3 data-i18n="serviceThreeTitle">Landing pages</h3>
-          <p data-i18n="serviceThreeText">Fast, modern websites for products, launches, campaigns and company presentation.</p>
+          <h3 data-i18n="skillThreeTitle">Interní systémy</h3>
+          <p data-i18n="skillThreeText">Ticketing, dashboardy, evidence, schvalování a nástroje pro lepší řízení práce ve firmě.</p>
+        </article>
+        <article class="skill-card">
+          <span>04</span>
+          <h3 data-i18n="skillFourTitle">Digitální organizace</h3>
+          <p data-i18n="skillFourText">Pomáháme převést chaos v datech, lidech nebo procesech do přehledného systému.</p>
         </article>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <span>© <span id="year"></span> WGTLabs</span>
-    <span data-i18n="footerText">Building from Czechia. Launching worldwide.</span>
+  <footer class="site-footer shell">
+    <div class="footer-logo">
+      <img src="assets/wgt-symbol.png" alt="WGT" />
+    </div>
+    <div class="legal-block" aria-label="Company information">
+      <p><strong>WGTLabs s.r.o.</strong></p>
+      <p>IČO: 29313153</p>
+      <p data-i18n="registered">Registered in Czech Republic</p>
+      <p>Contact: <a href="mailto:contact@wgtlabs.com">contact@wgtlabs.com</a></p>
+      <p>Website: <a href="https://wgtlabs.com">wgtlabs.com</a></p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
